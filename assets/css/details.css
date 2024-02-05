@@ -1,0 +1,329 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #559082;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+ 
+.box-green {
+    width: 502px;
+    height: 925px;
+    border-radius: 55px;
+    background: #48CFB0;
+  
+
+}
+
+
+.list-one {
+display: flex;
+flex-direction: row;
+list-style-type: none;
+
+}
+
+#seta {
+margin-top: 35px;
+
+}
+
+#heart {
+margin-top: 18px;
+margin-left: 320px;
+}
+
+.list-two{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+#name {
+ width: 259.976px;
+ height: 61px;
+ flex-shrink: 0;
+ color: #FFF;
+ font-size: 53.626px;
+ font-style: normal;
+ font-weight: 700;
+ line-height: normal;
+ display: inline;
+}
+
+#number {
+color: #FFF;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: 25px;
+margin-left: 95px;    
+}
+
+.pokemon {
+   width: 210px;
+   height: 206px;
+   flex-shrink: 0;
+   margin-top: 35px;
+   margin-left: 125px;
+   display: relative;
+
+}
+
+.box-white {
+    width: 502px;
+    height: 599px;
+    border-radius: 55px;
+    background: #FFF;
+    flex-shrink: 0;
+
+}
+
+#indice{
+   
+ text-align: justify;
+ display: flex;
+ justify-content: space-evenly;
+ padding-left: 0;
+padding-top: 25px;
+}
+
+#about{
+color:     #4E4E4E;
+   font-size: 20px;
+   font-style: bold;
+   font-weight: 700;
+
+}
+
+#base-stats{
+    color: #A29A9A;
+   font-size: 20px;
+   font-style: bold;
+   font-weight: 700;
+ 
+}
+
+#evolution{
+    color: #A29A9A;
+   font-size: 20px;
+   font-style: bold;
+   font-weight: 700;
+}
+
+#moves{
+    color: #A29A9A;
+   font-size: 20px;
+   font-style: bold;
+   font-weight: 700;
+}
+#species-index{
+    text-align: justify;
+    display:inline-flexbox;
+    justify-content:space-between ;
+   
+}
+
+#species{
+    padding-left: 0;
+    padding-top: 35px;
+    color: #A29A9A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#seed{
+    padding-right: 250px;
+    padding-top: 35px;
+    color: #030303;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#height-index{
+    padding-top: 5px;
+    text-align: justify;
+    display:inline-flexbox;
+    justify-content:space-between ;
+   
+}
+
+#height{
+    padding-left: 0;
+        color: #A29A9A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#height-result{
+    padding-right: 155px;
+        color: #030303;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#weight-index{
+    padding-top: 5px;
+    text-align: justify;
+    display:inline-flexbox;
+    justify-content:space-between ;
+   
+}
+
+#weight{
+    padding-left: 0;
+        color: #A29A9A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#weight-result{
+    padding-right: 155px;
+        color: #030303;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#abilities-index{
+    padding-top: 5px;
+    text-align: justify;
+    display:inline-flexbox;
+    justify-content:space-between ;
+   
+}
+
+#abilities{
+    padding-left: 0;
+        color: #A29A9A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#abilities-result{
+    padding-right: 109px;
+        color: #030303;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.box-white h1{
+    padding-left: 40px;
+}
+
+#gender-index{
+    padding-top: 5px;
+    text-align: justify;
+    display:inline-flexbox;
+    justify-content:space-between ;
+   
+}
+
+#gender{
+    padding-left: 0;
+        color: #A29A9A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#img-male{
+      margin-left: auto;
+     
+}
+
+#result-male{
+     color: #030303;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#img-female{
+    
+     
+}
+
+#result-female{
+padding-right: 140px;
+color: #030303;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+#groups-index{
+    padding-top: 5px;
+    text-align: justify;
+    display:inline-flexbox;
+    justify-content:space-between ;
+   
+}
+
+#egg-groups{
+    padding-left: 0;
+        color: #A29A9A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#egg-groups-result{
+    padding-right: 221px;
+        color: #030303;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#cycle-index{
+    padding-top: 5px;
+    text-align: justify;
+    display:inline-flexbox;
+    justify-content:space-between ;
+   
+}
+
+#egg-cycle{
+    padding-left: 0;
+        color: #A29A9A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#egg-cycle-result{
+    padding-right: 245px;
+        color: #030303;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
