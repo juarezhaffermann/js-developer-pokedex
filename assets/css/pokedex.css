@@ -127,6 +127,30 @@
     height: 70px;
 }
 
+.buttonMoreDetails{
+   display: flex;
+   justify-content: center;
+}
+
+#buttonDetails {
+    background-color: #c2c245; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .625rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: .25rem .5rem;
+    margin: auto;
+    align-items: center;
+    
+}
+
+#buttonDetails:hover {
+    background-color: #5c5c50; 
+}
+
 .pagination {
     display: flex;
     flex-direction: row;
@@ -135,6 +159,7 @@
     width: 100%;
     padding: 1rem;
 }
+
 
 .pagination button {
     padding: .25rem .5rem;

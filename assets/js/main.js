@@ -18,11 +18,17 @@ function convertPokemonToLi(pokemon) {
 
                 <img src="${pokemon.photo}"
                      alt="${pokemon.name}">
-            </div>
+                    </div>
+                    <div class="buttonMoreDetails">
+                    <button type="button"  id="buttonDetails" onclick = "moreDetails()"> more details </button>
+                    </div>
         </li>
     `
 }
 
+function moreDetails(){
+    window.location.href = "pages/details-1.html";
+}
 function loadPokemonItens(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
         const newHtml = pokemons.map(convertPokemonToLi).join('')
