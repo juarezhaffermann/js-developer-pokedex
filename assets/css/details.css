@@ -29,13 +29,59 @@ body {
         margin-top: 2.18rem;
     
     }
+
+    .transparent-button {
+        background-color: transparent;
+        border: none; /* Remove default button border */
+        padding: 0; /* Remove default padding */
+        cursor: pointer; /* Indicate clickable area */
+      }
+
+      #seta:hover{
+        animation: piscar 1s infinite;
+      }
+      
+      @keyframes piscar {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
     
     #heart {
         margin-top: 1.12rem;
         margin-right: 1.5rem;
-    
-        
     }
+
+    #heart:hover{
+        animation: piscar 1s infinite;
+      }
+      
+      @keyframes piscar {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+        .favorite-button {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+          }
+          
+         
+    
     #name {
  
         color: #FFF;

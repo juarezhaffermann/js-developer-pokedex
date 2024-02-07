@@ -29,6 +29,11 @@ function convertPokemonToLi(pokemon) {
 function moreDetails(){
     window.location.href = "pages/details-1.html";
 }
+
+function addToFavorites() {
+    // Criar a função para adicionar aos favoritos
+    alert("Adicionado aos favoritos!");
+  }
 function loadPokemonItens(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
         const newHtml = pokemons.map(convertPokemonToLi).join('')

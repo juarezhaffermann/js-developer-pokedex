@@ -30,8 +30,16 @@
     <section>
         <div class="box-green">
             <ul class="list-one">
-                <li id="seta"> <img src="/assets/img/arrow.svg" alt="seta"></li>
-                <li id="heart"><img src="/assets/img/heart.svg" alt="heart"></li>
+                <li id="seta">
+                    <button class="transparent-button" onclick="window.location.href='/index.html'">
+                      <img src="/assets/img/arrow.svg" alt="Voltar à Página Inicial">
+                    </button>
+                  </li>
+                  <li id="heart">
+                    <button class="favorite-button" onclick="addToFavorites()">
+                      <img src="/assets/img/heart.svg" alt="Adicionar aos Favoritos">
+                    </button>
+                  </li>
             </ul>
             <ul class="list-one">
                 <li id="name">Bubassaur</li>
