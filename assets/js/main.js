@@ -27,7 +27,7 @@ function convertPokemonToLi(pokemon) {
 }
 
 function moreDetails(id) {
-    window.location.href = `/pages/details-1.html?id=${id}`;
+    window.location.href = `./pages/details-1.html?id=${id}`;
 }
  
 function loadPokemonItens(offset, limit) {
