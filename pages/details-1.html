@@ -1,104 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/details.css">
+        <link rel="stylesheet" href="/assets/css/global.css">
+        <link rel="stylesheet" href="/assets/css/pokedex.css">
+        <link rel="stylesheet" href="/assets/css/animation.css">
+        <title>Detalhes do Pokemon</title>
+    </head>
 
-    <!-- Normalize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Font Roboto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
-
-    <!-- Nosso CSS -->
-    <link rel="stylesheet" href="/assets/css/details.css">
-    <link rel="stylesheet" href="/assets/css/global.css">
-    <link rel="stylesheet" href="/assets/css/pokedex.css">
-
-
-
-    <title>Detalhes do Pokemon</title>
-</head>
-
-<body>
-    <section>
-        <div class="box-green">
-            <ul class="list-one">
-                <li id="seta">
-                    <button class="transparent-button" onclick="window.location.href='/index.html'">
-                      <img src="/assets/img/arrow.svg" alt="Voltar à Página Inicial">
-                    </button>
-                  </li>
-                  <li id="heart">
-                    <button class="favorite-button" onclick="addToFavorites()">
-                      <img src="/assets/img/heart.svg" alt="Adicionar aos Favoritos">
-                    </button>
-                  </li>
-            </ul>
-            <ul class="list-one">
-                <li id="name">Bubassaur</li>
-                <li id="number">#001</li>
-            </ul>
-            <div class="pokemon"> <img src="/assets/img/bubbasaur.svg" alt="Bubassaur"></div>
-            <div class="box-white">
-                <nav>
-                    <ol id="indexMenu" class="menu">
-                        <li id="about">About</li>
-                        <li id="base-stats">Base Stats</li>
-                        <li id="evolution">Evolution</li>
-                        <li id="moves">Moves</li>
-                    </ol>
-                </nav>
-
-                <ol id="itensIndex" class="list-two">
-                    <li id="species">Species</li>
-                    <li id="height">Height</li>
-                    <li id="weight">Weight</li>
-                    <li id="abilities">Abilities</li>
-                    
-                </ol>
-                <ol id="itensDescription" class="list-two">
-                    <li id="seed">Seed</li>
-                    <li id="height-result">2’3,6’ (0,70 cm)</li>
-                    <li id="weight-result">15,2 lbs (6,9 kg)</li>
-                    <li id="abilities-result">Overgrow, Chlorophyl</li>
-                </ol> 
-                
-            <H1>Breeding</H1>
-
-                <ol id="genderIndex" class="list-tree">
-                    <li id="gender">Gender</li>
-                    <li id="img-male"><img src="/assets/img/male.svg" alt="male"></li>
-                    <li id="result-male">87.5%</li>
-                    <li id="img-female"><img src="/assets/img/female.png" alt="female">
-                    </li>
-                    <li id="result-female">12.5%</li>
-                </ol>
-
-                <ol id="itensIndex2" class="list-two">
-                    <li id="egg-groups">Egg Groups</li>
-                    <li id="egg-cycle">Egg Cycle</li>
-                    
-                </ol>
-
-                <ol id="cycle-index" class="list-two">
-                    <li id="egg-groups-result">Monster</li>
-                    <li id="egg-cycle-result">Grass</li>
-                </ol>
-            </div>
-
-
+    <body>
+        <!-- Div de overlay para ocultar o carregamento -->
+        <div class="overlay" id="overlay">
+            <img src="/assets/img/loading.gif" alt="Carregando...">
         </div>
 
-    </section>
+        <section>
+            <div class="box-green">
+                <ul class="list-one">
+                    <li id="seta">
+                        <button class="transparent-button"
+                            onclick="window.location.href='/index.html'">
+                            <img src="/assets/img/arrow.svg"
+                                alt="Voltar à Página Inicial">
+                        </button>
+                    </li>
+                    <li id="heart">
+                        <button class="favorite-button"
+                            onclick="addToFavorites()">
+                            <img src="/assets/img/heart.svg"
+                                alt="Adicionar aos Favoritos">
+                        </button>
+                    </li>
+                </ul>
+                <ul class="list-one">
+                    <li id="name"></li>
+                    <li id="number"></li>
+                </ul>
+                <div class="pokemon" id="imgPhoto"> <img src alt></div>
+                <div class="box-white">
+                    <nav>
+                        <ol id="indexMenu" class="menu">
+                            <li id="about">About</li>
+                            <li id="base-stats">Base Stats</li>
+                            <li id="evolution">Evolution</li>
+                            <li id="moves">Moves</li>
+                        </ol>
+                    </nav>
 
+                    <ol id="itensIndex" class="list-two">
+                        <li id="species">Species</li>
+                        <li id="height">Height</li>
+                        <li id="weight">Weight</li>
+                        <li id="abilities">Abilities</li>
 
-</body>
+                    </ol>
+                    <ol id="itensDescription" class="list-two">
+                        <li id="species-result"></li>
+                        <li id="height-result"></li>
+                        <li id="weight-result"></li>
+                        <li id="abilities-result"></li>
+                    </ol>
+
+                    <h1>Breeding</h1>
+
+                    <ol id="genderIndex" class="list-tree">
+                        <li id="gender">Gender</li>
+                        <li id="img-male"><img src="/assets/img/male.svg"
+                                alt="male"></li>
+                        <li id="result-male"></li>
+                        <li id="img-female"><img src="/assets/img/female.png"
+                                alt="female">
+                        </li>
+                        <li id="result-female"></li>
+                    </ol>
+
+                    <ol id="itensIndex2" class="list-two">
+                        <li id="egg-groups">Egg Groups</li>
+                        <li id="egg-cycle">Egg Cycle</li>
+
+                    </ol>
+
+                    <ol id="cycle-index" class="list-two">
+                        <li id="egg-groups-result"></li>
+                        <li id="egg-cycle-result"></li>
+                    </ol>
+                </div>
+
+            </div>
+
+        </section>
+        <script src="/assets/js/pokemon-details.js"></script>
+        <script src="/assets/js/animation.js"></script>
+    </body>
 
 </html>

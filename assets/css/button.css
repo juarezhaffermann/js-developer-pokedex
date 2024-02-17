@@ -1,0 +1,51 @@
+.buttonMoreDetails{
+  display: flex;
+  justify-content: center;
+}
+
+#buttonDetails {
+  background-color: #FFD700; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  border: none;
+  border-radius: 10px; /* Arredondamento dos cantos */
+  padding: 8px 16px; /* Espaço interno */
+  font-size: 14px; /* Tamanho da fonte */
+  font-family: sans-serif; /* Família da fonte */
+  cursor: pointer;
+  position: relative; /* Permite posicionamento em 3D */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra leve */
+  transition: 0.2s ease-in-out; /* Transição suave para efeitos */
+
+  /* Estilos específicos para efeitos modernos */
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+#buttonDetails:hover {
+  background-color: #338033; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.1); /* Aumento de tamanho ao passar o mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte ao passar o mouse */
+}
+
+#buttonDetails:active {
+  transform: scale(0.95); /* Redução de tamanho ao clicar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra menor ao clicar */
+}
+
+#buttonDetails::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Brilho suave */
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  z-index: -1; /* Posiciona atrás do botão */
+}
+
+#buttonDetails:hover::before {
+  opacity: 1; /* Aumenta a opacidade do brilho ao passar o mouse */
+}

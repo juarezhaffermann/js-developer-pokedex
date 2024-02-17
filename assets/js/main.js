@@ -1,7 +1,7 @@
 const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 
-const maxRecords = 151
+const maxRecords = 649
 const limit = 10
 let offset = 0;
 
@@ -20,20 +20,16 @@ function convertPokemonToLi(pokemon) {
                      alt="${pokemon.name}">
                     </div>
                     <div class="buttonMoreDetails">
-                    <button type="button"  id="buttonDetails" onclick = "moreDetails()"> more details </button>
+                    <button type="button"  id="buttonDetails" onclick="moreDetails(${pokemon.number})"> More Details </button>
                     </div>
         </li>
     `
 }
 
-function moreDetails(){
-    window.location.href = "pages/details-1.html";
+function moreDetails(id) {
+    window.location.href = `/pages/details-1.html?id=${id}`;
 }
-
-function addToFavorites() {
-    // Criar a função para adicionar aos favoritos
-    alert("Adicionado aos favoritos!");
-  }
+ 
 function loadPokemonItens(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
         const newHtml = pokemons.map(convertPokemonToLi).join('')
@@ -56,3 +52,4 @@ loadMoreButton.addEventListener('click', () => {
         loadPokemonItens(offset, limit)
     }
 })
+

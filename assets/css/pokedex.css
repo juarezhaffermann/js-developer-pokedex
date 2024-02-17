@@ -1,86 +1,109 @@
 .pokemons {
+    /* Define a grade para os cards */
     display: grid;
     grid-template-columns: 1fr;
+     /* Remove margens e paddings padrão */
     margin: 0;
     padding: 0;
+     /* Remove bullets em listas não ordenadas */
     list-style: none;
 }
 
 .normal {
+    /* Cor de fundo para tipo Normal */
     background-color: #a6a877;
 }
 
 .grass {
+    /* Cor de fundo para tipo Grass */
     background-color: #77c850;
 }
 
 .fire {
+    /* Cor de fundo para tipo Fire */
     background-color: #ee7f30;
 }
 
 .water {
+    /* Cor de fundo para tipo Water */
     background-color: #678fee;
 }
 
 .electric {
+    /* Cor de fundo para tipo Electric */
     background-color: #f7cf2e;
 }
 
 .ice {
+    /* Cor de fundo para tipo Ice */
     background-color: #98d5d7;
 }
 
 .ground {
+    /* Cor de fundo para tipo Ground */
     background-color: #dfbf69;
 }
 
 .flying {
+    /* Cor de fundo para tipo Flying */
     background-color: #a98ff0;
 }
 
 .poison {
+    /* Cor de fundo para tipo Poison*/
     background-color: #a040a0;
 }
 
 .fighting {
+    /* Cor de fundo para tipo Fighting */
     background-color: #bf3029;
 }
 
 .psychic {
+    /* Cor de fundo para tipo Psychic */
     background-color: #f65687;
 }
 
 .dark {
+    /* Cor de fundo para tipo Dark */
     background-color: #725847;
 }
 
 .rock {
+    /* Cor de fundo para tipo Rock */
     background-color: #b8a137;
 }
 
 .bug {
+    /* Cor de fundo para tipo Bug */
     background-color: #a8b720;
 }
 
 .ghost {
+    /* Cor de fundo para tipo Ghost */
     background-color: #6e5896;
 }
 
 .steel {
+    /* Cor de fundo para tipo Steel */
     background-color: #b9b7cf;
 }
 
 .dragon {
+    /* Cor de fundo para tipo Dragon */
     background-color: #6f38f6;
 }
 
 .fairy {
+    /* Cor de fundo para tipo Fairy */
     background-color: #f9aec7;
 }
 
 .pokemon {
+    /* Layout flexbox vertical para o card */
     display: flex;
     flex-direction: column;
+    /* Ajusta margens, paddings e bordas */
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
@@ -127,35 +150,13 @@
     height: 70px;
 }
 
-.buttonMoreDetails{
-   display: flex;
-   justify-content: center;
-}
-
-#buttonDetails {
-    background-color: #c2c245; 
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: .625rem;
-    cursor: pointer;
-    border-radius: 1rem;
-    padding: .25rem .5rem;
-    margin: auto;
-    align-items: center;
-    
-}
-
-#buttonDetails:hover {
-    background-color: #5c5c50; 
-}
-
 .pagination {
+     /* Layout flexbox para a seção de paginação */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+      /* Ajusta a largura e padding */
     width: 100%;
     padding: 1rem;
 }
@@ -170,6 +171,8 @@
     border: none;
     border-radius: 1rem;
 }
+
+/* Media queries para ajustar layout em diferentes telas */
 
 @media screen and (min-width: 380px) {
     .pokemons {
